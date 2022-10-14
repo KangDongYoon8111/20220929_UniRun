@@ -70,4 +70,9 @@ public class GameManager : MonoBehaviour
         isGameover = true;
         gameoverUI.SetActive(true);
     }
+
+    public void Pause(int num)
+    {
+        Time.timeScale = num;
+    }
 }
